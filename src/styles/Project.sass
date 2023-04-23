@@ -1,0 +1,60 @@
+.Project
+	display: grid
+	grid-template-columns: 600px auto
+	gap: 32px
+	color: $charcoal
+	line-height: 1.5
+
+	h3
+		font-size: 1.8rem
+		font-weight: 600
+		margin: 0
+
+	.stack
+		font-weight: 600
+		color: $green
+
+	.links
+		display: flex
+		margin-top: 24px
+		a
+			display: flex
+			justify-content: center
+			gap: 8px
+			font-size: 1rem
+			border: 2px solid currentColor
+			border-radius: 32px
+			padding: 8px 0
+			width: 100px
+			text-align: center
+			color: #222
+			text-decoration: none
+			transition: transform .1s ease-in-out
+			&.live
+				color: $green
+				margin-left: 32px
+			&:hover
+				transform: scale(110%)
+			img
+				width: 16px
+
+	.screenshot img
+		display: block
+		border: 5px solid #222
+		border-radius: 8px
+		overflow: hidden
+		width: 100%
+		max-width: 500px
+		object-fit: contain
+
+@media (max-width: $tablet)
+	.Project
+		grid-template-columns: min(700px, calc(100vw - 32px))
+
+		.desktop
+			display: none
+
+		.mobile
+			display: block
+			margin-bottom: 16px
+

@@ -1,0 +1,94 @@
+.HomePage
+	section
+		margin-bottom: 64px
+	h2
+		font-size: 2rem
+
+	.top
+		font-size: 2rem
+		font-weight: 700
+		color: #444
+		p
+			font-size: 2rem
+			margin-bottom: 32px
+		img
+			width: 512px
+			max-width: 90vw
+
+	.skills .badges
+		display: flex
+		gap: 32px
+		flex-wrap: wrap
+
+	.contact
+		.caption
+			color: #999
+			font-size: 1.5rem
+			margin-bottom: 32px
+
+.Badge
+	border: 1px dotted #999
+	width: 200px
+	height: 200px
+	display: flex
+	flex-direction: column
+	align-items: center
+	justify-content: space-between
+	padding: 16px
+	img
+		width: 75%
+		height: 75%
+	p
+		margin: 0
+		text-align: center
+
+.ContactForm
+	position: relative
+	width: 600px
+	max-width: 100%
+	li
+		display: grid
+		grid-template-columns: 100px 1fr
+		margin-bottom: 16px
+	input
+		height: 32px
+		font-size: 1rem
+	textarea
+		height: 200px
+		font-size: 1rem
+		font-family: inherit
+	button
+		border: none
+		padding: 16px 0
+		width: 200px
+		background: #224
+		color: #fff
+		border-radius: 8px
+		&[disabled]
+			background: #222
+		float: right
+	p
+		position: absolute
+		bottom: 10px
+		right: 10px
+		margin: 0
+		padding: 16px
+		background: #dedede
+		border-radius: 5px
+
+@media(max-width: $mobile)
+	.HomePage
+		.skills .badges
+			gap: 16px
+			justify-content: center
+
+		.ContactForm
+			ul
+				padding: 0
+			li
+				grid-template-columns: 1fr
+
+@media(max-width: 450px)
+	.Badge
+		width: 150px
+		height: 150px

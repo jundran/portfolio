@@ -1,0 +1,39 @@
+$green: rgb(114, 182, 38)
+$charcoal: rgb(55, 65, 81)
+$tablet: 1100px
+$mobile: 750px
+
+@import fonts
+@import Header
+@import HomePage
+@import ProjectsPage
+@import Project
+
+body
+	margin: 0
+	font-family: 'Source Sans Pro'
+	background: #eee
+	*
+		box-sizing: border-box
+
+ul
+	list-style: none
+
+button, a
+	outline-offset: 5px
+
+button, input[type=checkbox]
+	cursor: pointer
+
+h1, h2, h3, p
+	margin: 0 0 16px 0
+
+.centred
+	width: 1100px
+	max-width: 100vw
+	margin-left: auto !important
+	margin-right: auto !important
+	padding: 32px 16px 64px 16px
+
+.mobile
+	display: none
