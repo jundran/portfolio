@@ -29,7 +29,7 @@ export default function ProjectsPage () {
 			</section>
 			{projects.length > 3 &&
 			<button className='scroll-button' onClick={handleClick} aria-label='Scroll to top'>
-				<img src="/icons/arrow-up.svg" alt="" />
+				<img src="icons/arrow-up.svg" alt="" />
 			</button>}
 		</main>
 	)
