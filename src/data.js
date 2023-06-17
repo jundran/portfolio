@@ -22,6 +22,30 @@ const battleship = {
 	description: 'Classic Battleship game. Playable against the computer with music and sound efects. Unit tested using Jest. The computer algorithm makes logical decisions when deciding which square to attack on the board.'
 }
 
+const blogManager = {
+	id: crypto.randomUUID(),
+	title: 'Blog Manager',
+	code: 'https://github.com/jundran/blog-manager',
+	live: 'https://jundran.github.io/blog-manager',
+	image: 'blog-manager.png',
+	stack: 'React, Sass, Styled Components',
+	tags: ['React', 'Server', 'Database', 'Authentication', 'API'],
+	links: [{ name: 'Blog API', url: 'https://github.com/jundran/blog-api' }],
+	description: 'Blog Manager is the front end client for a three part project that allows writers to author and manage blogs. It allows blog authors to create an account, write, manage, edit blogs, and to view and delete comments left by readers. It uses JSON web tokens to login and authenticate users. It connects to the blog-api, which is a separate back end application that enforces authentication and permissions, verifying that HTTP requests to manage a blog come from the authenticated blog author.'
+}
+
+const blogViewer = {
+	id: crypto.randomUUID(),
+	title: 'Blog Viewer',
+	code: 'https://github.com/jundran/blog-viewer',
+	live: 'https://jundran.github.io/blog-viewer',
+	image: 'blog-viewer.png',
+	stack: 'HTML, CSS, JavaScript',
+	tags: ['Database', 'Server', 'API'],
+	links: [{ name: 'Blog API', url: 'https://github.com/jundran/blog-api' }],
+	description: 'Blog Viewer is the front end client for reading blogs created by authors using blog-manager. It allows the public to read and comment on published blogs. For simplicity users can read and leave comments without authentication or an account. The backend API ensures that only published blogs can be fetched by the client.'
+}
+
 const calculator = {
 	id:crypto.randomUUID(),
 	title: 'Calculator',
@@ -64,6 +88,17 @@ const imageSlider = {
 	stack: 'HTML, CSS, JavaScript',
 	tags: [],
 	description: 'A modular image slider with automatical scrolling or manual control.'
+}
+
+const inventoryApplication = {
+	id: crypto.randomUUID(),
+	title: 'Inventory',
+	code: 'https://github.com/jundran/inventory-application',
+	live: 'https://inventory-ml9n.onrender.com/',
+	image: 'inventory-application.png',
+	stack: 'PUG, SASS, JavaScript, Express, MongoDB',
+	tags: ['Server', 'Database', 'Template Engine', 'API'],
+	description: 'This is an inventory management application. It catalogues items available for sale in in a store along with stock counts, descriptions, prices etc. The user can view, create, edit and delete products and the categories that they belong to using the app. They can upload images and thumbnails using multer middleware. Data is persisted to a cloud hosted MongoDB database. PUG templates serve the front end views using Express. As this is a practice project it is using free tier hosting on render.com. A limitation of the  free tier is that it does not allow for persistent storage so images will not be saved across server restarts but, in the code, I have implemented functionality to save uploaded images and delete them from the database and from the file system. The initial data for this app is populated from the Dummy JSON API as it would be very time consuming and tedious to manual enter all this data myself. The app also makes use of MongoDB aggregation pipeline to generate dynamic statistics about the inventory which you can see on the homepage.'
 }
 
 const knightsTravails = {
@@ -110,6 +145,17 @@ const memoryCard = {
 	description: 'A memory card game written in React. The challenge is for the players to click each character card but only once. It tracks the players best score and provides feedback about the game when it is over.'
 }
 
+const miniMessageBoard = {
+	id: crypto.randomUUID(),
+	title: 'Mini Message Board',
+	code: 'https://github.com/jundran/mini-message-board',
+	live: 'https://mini-message-board-kgod.onrender.com',
+	image: 'mini-message-board.png',
+	stack: 'PUG, SASS, JavaScript, Express',
+	tags: ['Server', 'Template Engine'],
+	description: 'This a simple message board app created to practise what I have learned about Express so far. It serves PUG templates. The index route shows the message board. The user can fill out the form to post a new message to the "/new" route which will save the message to an array. The user is then redirected to the index page which fetches the updated array of messages. Messages are persisted as long as the server remains running and can be seen by all users. For a production ready app, a database would be needed to provide authorization and data persistence if the server goes offline but that is beyond the scope of this project.'
+}
+
 const movies = {
 	id: crypto.randomUUID(),
 	title: 'Movies',
@@ -117,7 +163,7 @@ const movies = {
 	live: 'https://jundran.github.io/top-movies/',
 	image: 'top-movies.png',
 	stack: 'React, MongoDB, Node, Express, JWT, API',
-	tags: ['React', 'Database', 'Backend', 'Authentication', 'API'],
+	tags: ['React', 'Database', 'Server', 'Authentication', 'API'],
 	description: 'This is a MERN stack application that is a close clone of TMDB (themoviedb.org). It uses real data from TMDB API, JWT for authentication, Mongoose with a MongoDB database to allow the user to save favourites. It uses Node with Express to provide the back end. It aims to use best practices for modular reusable components along with correct semantics for accessibility and screen readers.'
 }
 
@@ -220,9 +266,14 @@ const weatherApp = {
 // 	description: ''
 // }
 
-export const tags = ['React', 'Game', 'Database', 'Backend', 'Authentication', 'API']
+
+export const tags = ['React', 'Game', 'Database', 'Server', 'Template Engine', 'Authentication', 'API']
 
 export const projects = [
+	blogManager,
+	blogViewer,
+	inventoryApplication,
+	miniMessageBoard,
 	movies,
 	shoppingCart,
 	memoryCard,

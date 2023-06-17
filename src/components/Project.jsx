@@ -8,6 +8,11 @@ export default function Project ({ data }) {
 					<img src={'screenshots/' + data.image} alt={data.name} />
 				</div>
 				<p className='desc'>{data.description}</p>
+				<div className="extra-links">
+					{data.links?.map(link =>
+						<a className='simple-link' key={link.name} href={link.url} target='_blank' rel="noreferrer">{link.name}</a>
+					)}
+				</div>
 				<div className="links">
 					<a href={data.code} target='_blank' rel="noreferrer" className="code">
 						<span>Code</span>

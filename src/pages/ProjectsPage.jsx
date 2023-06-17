@@ -23,6 +23,7 @@ export default function ProjectsPage () {
 	return (
 		<main className="ProjectsPage centred">
 			<Filter updateFilter={updateFilter}/>
+			<Notice />
 			<section className='projects' aria-label='Projects'>
 				{ projects.map(project => <Project key={project.id} data={project} />) }
 				{ !projects.length && <p className='no-content'>No projects match your filter.</p> }
@@ -53,8 +54,8 @@ function Filter ({ updateFilter }) {
 
 	return (
 		<div className="Filter">
-			<h2>Show projects with all selected features</h2>
-			<form aria-label='Show projects with all checked features'>
+			<h2>Show projects that utilize selected features</h2>
+			<form aria-label='Show projects that utilize all checked features'>
 				<ul>
 					{enabledValues.map((item, index) => (
 						<li key={item.tag}>
@@ -70,6 +71,16 @@ function Filter ({ updateFilter }) {
 					<li><button type="button" onClick={handleClear}>Clear</button></li>
 				</ul>
 			</form>
+		</div>
+	)
+}
+
+function Notice () {
+	return (
+		<div className="notice">
+			<p><em>
+				Please note that for full stack projects, the server uses a free tier web service hosted by <a className='simple-link'href='https://render.com/' target="_blank" rel="noreferrer">Render</a>. Front end clients are hosted on <a className='simple-link'href='https://pages.github.com/' target="_blank" rel="noreferrer">GitHub Pages</a>. The Render server sleeps when idle for 15 minutes. Please allow 15-30 seconds for the server to wake up and respond to the first network action. Subsequent use of the website will function normally.
+			</em></p>
 		</div>
 	)
 }
