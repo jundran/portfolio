@@ -1,3 +1,5 @@
+import parse from 'html-react-parser'
+
 export default function Project ({ data }) {
 	return (
 		<div className="Project">
@@ -7,12 +9,7 @@ export default function Project ({ data }) {
 				<div className="screenshot mobile">
 					<img src={'screenshots/' + data.image} alt={data.name} />
 				</div>
-				<p className='desc'>{data.description}</p>
-				<div className="extra-links">
-					{data.links?.map(link =>
-						<a className='simple-link' key={link.name} href={link.url} target='_blank' rel="noreferrer">{link.name}</a>
-					)}
-				</div>
+				<p className='desc'>{parse(data.description)}</p>
 				<div className="links">
 					<a href={data.code} target='_blank' rel="noreferrer" className="code">
 						<span>Code</span>
