@@ -1,4 +1,5 @@
-import { useState } from 'react'
+import Badge from '../components/Badge'
+import ContactForm from '../components/ContactForm'
 
 export default function HomePage () {
 	return (
@@ -37,70 +38,4 @@ export default function HomePage () {
 			</section>
 		</main>
 	)
-}
-
-function ContactForm () {
-	const [name, setName] = useState('')
-	const [email, setEmail] = useState('')
-	const [message, setMessage] = useState('')
-	const [showConfirmation, setShowConfirmation] = useState(false)
-	const [sending, setSending] = useState(false)
-
-	function handleSubmit (e) {
-		e.preventDefault()
-		if (sending) return
-		console.log(e)
-		setSending(true)
-		setTimeout(() => {
-			setName('')
-			setEmail('')
-			setMessage('')
-			setShowConfirmation(true)
-			setTimeout(() => setShowConfirmation(false), 5000)
-			setSending(false)
-		}, 400)
-	}
-
-	return (
-		<form className='ContactForm' onSubmit={handleSubmit}>
-			<ul>
-				<li>
-					<label htmlFor="sender">Name</label>
-					<input id="sender" value={name} onChange={e => setName(e.target.value)} required />
-				</li>
-				<li>
-					<label htmlFor="email">Email</label>
-					<input id="email" type="email" value={email} onChange={e => setEmail(e.target.value)} required />
-				</li>
-				<li>
-					<label htmlFor="message">Message</label>
-					<textarea
-						id="message"
-						value={message}
-						onChange={e => setMessage(e.target.value)}
-						placeholder='Form not wired up yet. Message will not be sent.'
-						required
-					/>
-				</li>
-			</ul>
-			<button disabled={sending || showConfirmation ? true : false} >
-				{sending ? 'Sending....' : 'Submit'}
-			</button>
-			{showConfirmation && <p>Thank you for your message.</p>}
-		</form>
-	)
-}
-
-function Badge ({ image, name, link }) {
-	function Inner () {
-		return (
-			<div className="Badge">
-				<img src={image} alt={name} />
-				<p>{name}</p>
-			</div>
-		)
-	}
-
-	if (link) return <a href={link} target="_blank" rel="noreferrer"><Inner /></a>
-	return <Inner />
 }
