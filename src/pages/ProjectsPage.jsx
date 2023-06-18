@@ -54,7 +54,7 @@ function Filter ({ updateFilter }) {
 
 	return (
 		<div className="Filter">
-			<h2>Show projects that utilize selected features</h2>
+			<h2>Show projects that utilize all selected features</h2>
 			<form aria-label='Show projects that utilize all checked features'>
 				<ul>
 					{enabledValues.map((item, index) => (
