@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import styled from 'styled-components'
 import { tags } from '../data'
+import { MOBILE, CHARCOAL } from '../styles/variables'
 
 export default function Filter ({ updateFilter }) {
 	const openFilter = tags.map(tag => { return {tag, checked: false} })
@@ -42,7 +43,7 @@ export default function Filter ({ updateFilter }) {
 }
 
 const Container = styled.div`
-	color: $charcoal;
+	color: ${CHARCOAL};
 	margin-bottom: 32px;
 	h2 {
 		font-size: 1.2rem;
@@ -51,13 +52,13 @@ const Container = styled.div`
 	ul {
 		display: flex;
 		gap: 32px;
-		border: 1px dotted $charcoal;
+		border: 1px dotted ${CHARCOAL};
 		width: fit-content;
 		margin: 0;
 		padding: 16px;
 	}
 
-	@media (max-width: $mobile) {
+	@media (max-width: ${MOBILE}) {
 		ul {
 			flex-direction: column;
 			gap: 8px;
