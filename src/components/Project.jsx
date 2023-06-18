@@ -1,4 +1,3 @@
-import parse from 'html-react-parser'
 import styled from 'styled-components'
 import { TABLET, CHARCOAL, GREEN } from '../styles/variables'
 
@@ -9,7 +8,7 @@ export default function Project ({ data }) {
 				<h3>{data.title}</h3>
 				<p className="stack"><span>Tech Stack: </span>{data.stack}</p>
 				<ScreenShot media='tablet' src={'screenshots/' + data.image} alt={data.name} />
-				<p className='desc'>{parse(data.description)}</p>
+				<p className='desc' dangerouslySetInnerHTML={{ __html: data.description }} />
 				<div className="links">
 					<ProjectLink href={data.code} target='_blank' rel="noreferrer">
 						<span>Code</span>

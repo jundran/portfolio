@@ -30,7 +30,7 @@ const blogManager = {
 	image: 'blog-manager.png',
 	stack: 'React, Sass, Styled Components',
 	tags: ['React', 'Server', 'Database', 'Authentication', 'API'],
-	description: 'Blog Manager is a front end client for a <strong>three part project</strong> (along with the blog viewer and blog API) that allows writers to author and manage blogs. Blog authors can create an account to write, manage, edit blogs, and to view and delete comments left by readers. It uses JSON web tokens to login and authenticate users. It connects to the <a className="simple-link" href="https://github.com/jundran/blog-api" target="_blank" rel="noreferrer">Blog API</a>, which is a separate back end application that enforces authentication and permissions, verifying that HTTP requests to manage a blog come from the authenticated blog author.'
+	description: 'Blog Manager is a front end client for a <strong>three part project</strong> (along with the blog viewer and blog API) that allows writers to author and manage blogs. Blog authors can create an account to write, manage, edit blogs, and to view and delete comments left by readers. It uses JSON web tokens to login and authenticate users. It connects to the <a class="simple-link" href="https://github.com/jundran/blog-api" target="_blank" rel="noreferrer">Blog API</a>, which is a separate back end application that enforces authentication and permissions, verifying that HTTP requests to manage a blog come from the authenticated blog author.'
 }
 
 const blogViewer = {
@@ -41,7 +41,7 @@ const blogViewer = {
 	image: 'blog-viewer.png',
 	stack: 'HTML, CSS, JavaScript',
 	tags: ['Database', 'Server', 'API'],
-	description: 'Blog Viewer is the front end client for reading blogs created by authors using blog-manager. It allows the public to read and comment on published blogs. For simplicity users can read and leave comments without authentication or an account. The backend <a className="simple-link" href="https://github.com/jundran/blog-api" target="_blank" rel="noreferrer">API</a> ensures that only published blogs can be fetched by the client.'
+	description: 'Blog Viewer is the front end client for reading blogs created by authors using blog-manager. It allows the public to read and comment on published blogs. For simplicity users can read and leave comments without authentication or an account. The backend <a class="simple-link" href="https://github.com/jundran/blog-api" target="_blank" rel="noreferrer">API</a> ensures that only published blogs can be fetched by the client.'
 }
 
 const calculator = {
