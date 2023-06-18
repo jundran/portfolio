@@ -4,6 +4,8 @@ import Project from '../components/Project'
 import Filter from '../components/Filter'
 import Notice from '../components/Notice'
 import ScrollButton from '../components/ScrollButton'
+import { styled } from 'styled-components'
+import { TABLET } from '../styles/variables'
 
 export default function ProjectsPage () {
 	const [projects, setProjects] = useState(data)
@@ -27,11 +29,30 @@ export default function ProjectsPage () {
 		<main className="ProjectsPage centred">
 			<Filter updateFilter={updateFilter}/>
 			<Notice />
-			<section className='projects' aria-label='Projects'>
-				{ projects.map(project => <Project key={project.id} data={project} />) }
-				{ !projects.length && <p className='no-content'>No projects match your filter.</p> }
-			</section>
+			<>
+				{ projects.length ?
+					<Projects aria-label='Projects'>
+						{ projects.map(project => <Project key={project.id} data={project} />) }
+					</Projects>
+					:
+					<NoContent>No projects match your filter.</NoContent>
+				}
+			</>
 			{projects.length > 3 &&	<ScrollButton onClick={handleScroll} />}
 		</main>
 	)
 }
+
+const Projects = styled.section`
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 64px;
+		@media (max-width: ${TABLET}) {
+			align-items: flex-start;
+		}
+`
+
+const NoContent = styled.p`
+	align-self: flex-start;
+`
