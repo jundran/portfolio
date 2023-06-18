@@ -1,8 +1,10 @@
+@use '../v'
+
 .Project
 	display: grid
 	grid-template-columns: 600px auto
 	gap: 32px
-	color: $charcoal
+	color: v.$CHARCOAL
 	line-height: 1.5
 
 	h3
@@ -12,7 +14,7 @@
 
 	.stack
 		font-weight: 600
-		color: $green
+		color: v.$GREEN
 
 	.links
 		display: flex
@@ -31,7 +33,7 @@
 			text-decoration: none
 			transition: transform .1s ease-in-out
 			&.live
-				color: $green
+				color: v.$GREEN
 				margin-left: 32px
 			&:hover
 				transform: scale(110%)
@@ -47,7 +49,7 @@
 		max-width: 500px
 		object-fit: contain
 
-@media (max-width: $tablet)
+@media (max-width: v.$TABLET)
 	.Project
 		grid-template-columns: min(700px, calc(100vw - 32px))
 
@@ -57,4 +59,3 @@
 		.mobile
 			display: block
 			margin-bottom: 16px
-

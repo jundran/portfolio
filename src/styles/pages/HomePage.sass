@@ -1,3 +1,5 @@
+@use '../v'
+
 .HomePage
 	section
 		margin-bottom: 64px
@@ -26,7 +28,7 @@
 			font-size: 1.5rem
 			margin-bottom: 32px
 
-@media(max-width: $mobile)
+@media(max-width: v.$MOBILE)
 	.HomePage
 		.skills .badges
 			gap: 16px
