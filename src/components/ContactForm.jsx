@@ -8,7 +8,7 @@ export default function ContactForm () {
 	function handleSubmit (e) {
 		e.preventDefault()
 
-		fetch('http://localhost:6001/api/v1/message', {
+		fetch('https://portfolio-exca.onrender.com/api/v1/message', {
 			method: 'POST',
 			headers: { 'Content-Type': 'application/json' },
 			body: JSON.stringify({
