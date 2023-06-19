@@ -1,10 +1,10 @@
 import { useState } from 'react'
+import styled from 'styled-components'
 import { projects as data } from '../data'
 import Project from '../components/Project'
 import Filter from '../components/Filter'
 import Notice from '../components/Notice'
 import ScrollButton from '../components/ScrollButton'
-import { styled } from 'styled-components'
 import { TABLET } from '../styles/variables'
 
 export default function ProjectsPage () {

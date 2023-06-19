@@ -43,9 +43,11 @@ const Container = styled.div`
 	.stack {
 		font-weight: 600;
 		color: ${GREEN};
+		margin: 0 0 4px 0;
 	}
 	.desc {
 		max-width: 700px;
+		margin: 0;
 	}
 	.links {
 		display: flex;
@@ -55,6 +57,7 @@ const Container = styled.div`
 
 const ScreenShot = styled.img`
 	display: block;
+	margin: 10px 0;
 	border: 5px solid #222;
 	border-radius: 8px;
 	overflow: hidden;

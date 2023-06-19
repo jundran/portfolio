@@ -6,12 +6,12 @@ import { MOBILE } from '../styles/variables'
 export default function HomePage () {
 	return (
 		<Page className="HomePage centred">
-			<Top aria-label='Introduction'>
+			<Intro aria-label='Introduction'>
 				<p className="caption">I am a full stack web developer and a student of the Odin Project.</p>
 				<a href='https://www.theodinproject.com' target='_blank' rel="noreferrer">
 					<img className="odin" src="skills/odin.svg" alt="odin project logo" />
 				</a>
-			</Top>
+			</Intro>
 			<section aria-label='Skills'>
 				<h2>Skills</h2>
 				<Badges className="badges">
@@ -47,7 +47,7 @@ const Page = styled.main`
 	h2 { font-size: 2rem }
 `
 
-const Top = styled.section`
+const Intro = styled.section`
 	font-size: 2rem;
 	font-weight: 700;
 	color: #444;

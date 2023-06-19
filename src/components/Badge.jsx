@@ -15,7 +15,6 @@ export default function Badge ({ image, name, link }) {
 }
 
 const Container = styled.div`
-	box-sizing: border-box;
 	border: 1px dotted #999;
 	width: 125px;
 	height: 125px;
