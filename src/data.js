@@ -160,9 +160,9 @@ const movies = {
 	code: 'https://github.com/jundran/top-movies',
 	live: 'https://jundran.github.io/top-movies/',
 	image: 'top-movies.png',
-	stack: 'React, MongoDB, Node, Express, JWT, API',
-	tags: ['React', 'Database', 'Server', 'Authentication', 'API'],
-	description: 'This is a MERN stack application that is a close clone of TMDB (themoviedb.org). It uses real data from TMDB API, JWT for authentication, Mongoose with a MongoDB database to allow the user to save favourites. It uses Node with Express to provide the back end. It aims to use best practices for modular reusable components along with correct semantics for accessibility and screen readers.'
+	stack: 'React, SASS',
+	tags: ['React', 'API'],
+	description: 'This is a close clone of <a class="simple-link" href="https://www.themoviedb.org/" target="_blank" rel="noreferrer">TMDB website</a> made with React. It uses real data from TMDB API. This app does not have a back end and not all the features of the original site have been implemented because of it is far too big, but the core purpose of the site is functional, which is to find movies and TV shows to watch and I use it personally. The home page loads trending movies and TV shows from the API. I built a toggle component to switch between media types or time frames. I created the modal video player which plays trailers from the home page or from individual media detail pages and, unlike the original site, background interaction and scrolling is disabled when the modal is open. I created a review score component to match the one on TMDB which works dynamically using the score returned by the API. I also implemented search functionality with a drop down search bar that queries the API. Furthermore, my site aims to use best practices for modular reusable components along with correct semantics for accessibility and screen readers.'
 }
 
 const odinRecipes = {
