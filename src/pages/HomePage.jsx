@@ -11,6 +11,9 @@ export default function HomePage () {
 				<a href='https://www.theodinproject.com' target='_blank' rel="noreferrer">
 					<img className="odin" src="skills/odin.svg" alt="odin project logo" />
 				</a>
+				<p><a className='simple-link' href='https://github.com/jundran' target='_blank' rel="noreferrer">
+					View all my code and projects on GutHub.
+				</a></p>
 			</Intro>
 			<section aria-label='Skills'>
 				<h2>Skills</h2>
