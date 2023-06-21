@@ -12,7 +12,7 @@ export default function HomePage () {
 					<img className="odin" src="skills/odin.svg" alt="odin project logo" />
 				</a>
 				<p><a className='simple-link' href='https://github.com/jundran' target='_blank' rel="noreferrer">
-					View all my code and projects on GutHub.
+					View all my code and projects on GitHub.
 				</a></p>
 			</Intro>
 			<section aria-label='Skills'>

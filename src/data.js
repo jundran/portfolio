@@ -132,6 +132,17 @@ const library = {
 	description: 'A library application that allows users to add books that they own and manage their read status.'
 }
 
+const membersOnly = {
+	id: crypto.randomUUID(),
+	title: 'Members Only',
+	code: 'https://github.com/jundran/members-only',
+	live: 'https://members-only-gip4.onrender.com',
+	image: 'members-only.png',
+	stack: 'EJS, SASS, JavaScript, Express, MongoDB',
+	tags: ['Server', 'Database', 'Template Engine', 'API'],
+	description: 'This is a message board app developed with Express, MongoDB and PassportJS, serving EJS templates. It has minimal styling and isn\'t much fun but its purpose is to demonstrate how to authenticate users and manage their abilities depending on if they are logged in or on the status of their account.'
+}
+
 const memoryCard = {
 	id: crypto.randomUUID(),
 	title: 'Memory Card',
@@ -270,6 +281,7 @@ export const tags = ['React', 'Game', 'Database', 'Server', 'Template Engine', '
 export const projects = [
 	blogManager,
 	blogViewer,
+	membersOnly,
 	inventoryApplication,
 	miniMessageBoard,
 	movies,
@@ -289,6 +301,6 @@ export const projects = [
 	signUpForm,
 	etchASketch,
 	rockPaperScissors,
-	odinRecipes,
-	landingPage
+	landingPage,
+	odinRecipes
 ]
