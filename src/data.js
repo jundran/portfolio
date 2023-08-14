@@ -7,7 +7,7 @@ const adminDashboard = {
 	live: 'https://jundran.github.io/admin-dashboard/',
 	image: 'admin-dashboard.webp',
 	stack: 'HTML, CSS',
-	tags: [],
+	tags: ['Frontend Only'],
 	description: 'Admin Dashboard is a single page site built to a provided design using grid layout.'
 }
 
@@ -18,7 +18,7 @@ const battleship = {
 	live: 'https://jundran.github.io/battleship/',
 	image: 'battleship.webp',
 	stack: 'HTML, CSS, JavaScript',
-	tags: ['Game'],
+	tags: ['Frontend Only', 'Game'],
 	description: 'Classic Battleship game. Playable against the computer with music and sound efects. Unit tested using Jest. The computer algorithm makes logical decisions when deciding which square to attack on the board.'
 }
 
@@ -28,8 +28,8 @@ const blogManager = {
 	code: 'https://github.com/jundran/blog-manager',
 	live: 'https://jundran.github.io/blog-manager',
 	image: 'blog-manager.webp',
-	stack: 'React, Sass, Styled Components',
-	tags: ['React', 'Server', 'Database', 'Authentication', 'API'],
+	stack: 'React, Sass, Styled Components, Express, MongoDB',
+	tags: ['Full Stack'],
 	description: 'Blog Manager is a front end client for a <strong>three part project</strong> (along with the blog viewer and blog API) that allows writers to author and manage blogs. Blog authors can create an account to write, manage, edit blogs, and to view and delete comments left by readers. It uses JSON web tokens to login and authenticate users. It connects to the <a class="simple-link" href="https://github.com/jundran/blog-api" target="_blank" rel="noreferrer">Blog API</a>, which is a separate back end application that enforces authentication and permissions, verifying that HTTP requests to manage a blog come from the authenticated blog author.'
 }
 
@@ -39,8 +39,8 @@ const blogViewer = {
 	code: 'https://github.com/jundran/blog-viewer',
 	live: 'https://jundran.github.io/blog-viewer',
 	image: 'blog-viewer.webp',
-	stack: 'HTML, CSS, JavaScript',
-	tags: ['Database', 'Server', 'API'],
+	stack: 'HTML, CSS, JavaScript, Express, MongoDB',
+	tags: ['Full Stack'],
 	description: 'Blog Viewer is the front end client for reading blogs created by authors using blog-manager. It allows the public to read and comment on published blogs. For simplicity users can read and leave comments without authentication or an account. The backend <a class="simple-link" href="https://github.com/jundran/blog-api" target="_blank" rel="noreferrer">API</a> ensures that only published blogs can be fetched by the client.'
 }
 
@@ -51,7 +51,7 @@ const calculator = {
 	live: 'https://jundran.github.io/calculator/',
 	image: 'calculator.webp',
 	stack: 'HTML, CSS, JavaScript',
-	tags: [],
+	tags: ['Frontend Only'],
 	description: 'A calculator app with retro design.'
 }
 
@@ -62,7 +62,7 @@ const cvApplication = {
 	live: 'https://jundran.github.io/cv-application/',
 	image: 'cv-application.webp',
 	stack: 'React',
-	tags: ['React'],
+	tags: ['Frontend Only', 'React'],
 	description: 'CV creator application built with React. Users can fill out their resume then print a PDF file from the preview. Data is saved using local storage.'
 }
 
@@ -73,7 +73,7 @@ const etchASketch = {
 	live: 'https://jundran.github.io/etch-a-sketch/',
 	image: 'etch-a-sketch.webp',
 	stack: 'HTML, CSS, JavaScript',
-	tags: ['Game'],
+	tags: ['Frontend Only', 'Game'],
 	description: 'An Etch-a-sketch browser game that allows players to create a drawing board with a set number of squares. The player can shade squares with multiple passes or delete them to draw pictures.'
 }
 
@@ -84,7 +84,7 @@ const imageSlider = {
 	live: 'https://jundran.github.io/image-slider/',
 	image: 'image-slider.webp',
 	stack: 'HTML, CSS, JavaScript',
-	tags: [],
+	tags: ['Frontend Only'],
 	description: 'A modular image slider with automatical scrolling or manual control.'
 }
 
@@ -95,7 +95,7 @@ const inventoryApplication = {
 	live: 'https://inventory-ml9n.onrender.com/',
 	image: 'inventory-application.webp',
 	stack: 'PUG, SASS, JavaScript, Express, MongoDB',
-	tags: ['Server', 'Database', 'Template Engine', 'API'],
+	tags: ['Server Side Rendering'],
 	description: 'This is an inventory management application. It catalogues items available for sale in in a store along with stock counts, descriptions, prices etc. The user can view, create, edit and delete products and the categories that they belong to using the app. They can upload images and thumbnails using multer middleware. Data is persisted to a cloud hosted MongoDB database. PUG templates serve the front end views using Express. As this is a practice project it is using free tier hosting on render.com. A limitation of the  free tier is that it does not allow for persistent storage so images will not be saved across server restarts but, in the code, I have implemented functionality to save uploaded images and delete them from the database and from the file system. The initial data for this app is populated from the Dummy JSON API as it would be very time consuming and tedious to manual enter all this data myself. The app also makes use of MongoDB aggregation pipeline to generate dynamic statistics about the inventory which you can see on the homepage.'
 }
 
@@ -106,7 +106,7 @@ const knightsTravails = {
 	live: 'https://jundran.github.io/knights-travails/',
 	image: 'knights-travails.webp',
 	stack: 'HTML, CSS, JavaScript',
-	tags: ['Game'],
+	tags: ['Frontend Only', 'Game'],
 	description: 'This project provides a chess board with a knight piece. The player can move the knight to any other square on the board. It utilizes a breadth-first-search algorithm to find the shortest path.'
 }
 
@@ -117,7 +117,7 @@ const landingPage = {
 	live: 'https://jundran.github.io/landing-page/',
 	image: 'landing-page.webp',
 	stack: 'HTML CSS',
-	tags: [],
+	tags: ['Frontend Only'],
 	description: "This is one  of my earliest projects. It's a simple landing page featuring Mario characters."
 }
 
@@ -128,7 +128,7 @@ const library = {
 	live: 'https://jundran.github.io/library/',
 	image: 'library.webp',
 	stack: 'HTML, CSS, JavaScript',
-	tags: [],
+	tags: ['Frontend Only'],
 	description: 'A library application that allows users to add books that they own and manage their read status.'
 }
 
@@ -139,7 +139,7 @@ const membersOnly = {
 	live: 'https://members-only-gip4.onrender.com',
 	image: 'members-only.webp',
 	stack: 'EJS, SASS, JavaScript, Express, MongoDB',
-	tags: ['Server', 'Database', 'Template Engine', 'API'],
+	tags: ['Server Side Rendering'],
 	description: 'This is a message board app developed with Express, MongoDB and PassportJS, serving EJS templates. It has minimal styling and isn\'t much fun but its purpose is to demonstrate how to authenticate users and manage their abilities depending on if they are logged in or on the status of their account.'
 }
 
@@ -150,7 +150,7 @@ const memoryCard = {
 	live: 'https://jundran.github.io/memory-card/',
 	image: 'memory-card.webp',
 	stack: 'React',
-	tags: ['React', 'Game'],
+	tags: ['Frontend Only', 'Game'],
 	description: 'A memory card game written in React. The challenge is for the players to click each character card but only once. It tracks the players best score and provides feedback about the game when it is over.'
 }
 
@@ -161,7 +161,7 @@ const miniMessageBoard = {
 	live: 'https://mini-message-board-kgod.onrender.com',
 	image: 'mini-message-board.webp',
 	stack: 'PUG, SASS, JavaScript, Express',
-	tags: ['Server', 'Template Engine'],
+	tags: ['Server Side Rendering'],
 	description: 'This a simple message board app created to practise what I have learned about Express so far. It serves PUG templates. The index route shows the message board. The user can fill out the form to post a new message to the "/new" route which will save the message to an array. The user is then redirected to the index page which fetches the updated array of messages. Messages are persisted as long as the server remains running and can be seen by all users. For a production ready app, a database would be needed to provide authorization and data persistence if the server goes offline but that is beyond the scope of this project.'
 }
 
@@ -171,9 +171,20 @@ const movies = {
 	code: 'https://github.com/jundran/top-movies',
 	live: 'https://jundran.github.io/top-movies/',
 	image: 'top-movies.webp',
-	stack: 'React, SASS',
-	tags: ['React', 'API'],
+	stack: 'React, SASS, Third-party API',
+	tags: ['Frontend Only'],
 	description: 'This is a close clone of <a class="simple-link" href="https://www.themoviedb.org/" target="_blank" rel="noreferrer">TMDB website</a> made with React. It uses real data from TMDB API. This app does not have a back end and not all the features of the original site have been implemented because of it is far too big, but the core purpose of the site is functional, which is to find movies and TV shows to watch and I use it personally. The home page loads trending movies and TV shows from the API. I built a toggle component to switch between media types or time frames. I created the modal video player which plays trailers from the home page or from individual media detail pages and, unlike the original site, background interaction and scrolling is disabled when the modal is open. I created a review score component to match the one on TMDB which works dynamically using the score returned by the API. I also implemented search functionality with a drop down search bar that queries the API. Furthermore, my site aims to use best practices for modular reusable components along with correct semantics for accessibility and screen readers.'
+}
+
+const odinbook = {
+	id: crypto.randomUUID(),
+	title: 'OdinBook',
+	code: 'https://github.com/jundran/odinbook',
+	live: 'https://jundran.github.io/odinbook/',
+	image: 'odinbook.webp',
+	stack: 'React, Styled Components, SocketIO, Express, MongoDB',
+	tags: ['Full Stack'],
+	description: 'The Odinbook is a social media site. Users can make a profile, create posts with images, interact with friends and receive realtime notifications.'
 }
 
 const odinRecipes = {
@@ -183,7 +194,7 @@ const odinRecipes = {
 	live: 'https://jundran.github.io/odin-recipes/',
 	image: 'odin-recipes.webp',
 	stack: 'HTML, CSS, JavaScript',
-	tags: [],
+	tags: ['Frontend Only'],
 	description: 'A simple recipe website. This is one of my earliest projects.'
 }
 
@@ -194,7 +205,7 @@ const restaurantPage = {
 	live: 'https://jundran.github.io/restaurant-page/',
 	image: 'restaurant-page.webp',
 	stack: 'HTML, CSS, JavaScript',
-	tags: [],
+	tags: ['Frontend Only'],
 	description: 'A single page application for a restaurant which provides tabbed browsing. The purpose of this project was to learn how to make components using javaScript but doing it the hard way before learning React.'
 }
 
@@ -205,7 +216,7 @@ const rockPaperScissors = {
 	live: 'https://jundran.github.io/rock-paper-scissors/',
 	image: 'rock-paper-scissors.webp',
 	stack: 'HTML, CSS, JavaScript',
-	tags: ['Game'],
+	tags: ['Frontend Only', 'Game'],
 	description: 'Rock Paper Scissors game playable against the computer.'
 }
 
@@ -216,7 +227,7 @@ const shoppingCart = {
 	live: 'https://jundran.github.io/shopping-cart/',
 	image: 'shopping-cart.webp',
 	stack: 'React',
-	tags: ['React'],
+	tags: ['Frontend Only'],
 	description: 'An e-commerce site written in React. Users can add items to a cart, change quantities or delete them. State is updated automatically and persisted across reloads.'
 }
 
@@ -227,7 +238,7 @@ const signUpForm = {
 	live: 'https://jundran.github.io/sign-up-form/',
 	image: 'sign-up-form.webp',
 	stack: 'HTML, CSS, JavaScript',
-	tags: [],
+	tags: ['Frontend Only'],
 	description: 'A simple sign up form that uses javaScript for validation and to provide feedback to the user as they fill it out.'
 }
 
@@ -238,7 +249,7 @@ const ticTacToe = {
 	live: 'https://jundran.github.io/tic-tac-toe/',
 	image: 'tic-tac-toe.webp',
 	stack: 'HTML, CSS, JavaScript',
-	tags: ['Game'],
+	tags: ['Frontend Only'],
 	description: 'A Noughts and Crosses game playable against the computer or another player. The computer algorithm makes logical decisions to play defensively on each turn.'
 }
 
@@ -249,7 +260,7 @@ const todoList = {
 	live: 'https://jundran.github.io/todo-list/',
 	image: 'todo-list.webp',
 	stack: 'HTML CSS, JavaScript',
-	tags: [],
+	tags: ['Frontend Only'],
 	description: 'A Todo list application. It allows the user to create projects and add todos to each project. Each todo can be marked as ongoing or completed, renamed, deleted and edited. State is persisted using local storage.'
 }
 
@@ -259,8 +270,8 @@ const weatherApp = {
 	code: 'https://github.com/jundran/weather-app',
 	live: 'https://jundran.github.io/weather-app/',
 	image: 'weather-app.webp',
-	stack: 'HTML, CSS, Javascript, API',
-	tags: ['API'],
+	stack: 'HTML, CSS, Javascript, Third-party API',
+	tags: ['Frontend Only'],
 	description: 'A weather app using real-time data from the OpenWeather API. It allows the user to search by city in any country. It provides the current weather and other information for that location such as coordinates and sunrise times. A simple toggle switch component allows the user to change between metric and imperial units.'
 }
 
@@ -276,9 +287,10 @@ const weatherApp = {
 // }
 
 
-export const tags = ['React', 'Game', 'Database', 'Server', 'Template Engine', 'Authentication', 'API']
+export const tags = ['Frontend Only', 'Full Stack', 'Server Side Rendering', 'Game']
 
 export const projects = [
+	odinbook,
 	blogManager,
 	blogViewer,
 	membersOnly,
