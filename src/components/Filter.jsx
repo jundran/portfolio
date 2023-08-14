@@ -21,7 +21,7 @@ export default function Filter ({ updateFilter }) {
 
 	return (
 		<Container className="Filter">
-			<h2>Show projects that utilize all selected features</h2>
+			<h2>Show projects that utilize <span>all</span> selected features</h2>
 			<form aria-label='Show projects that utilize all checked features'>
 				<ul>
 					{enabledValues.map((item, index) => (
@@ -48,6 +48,7 @@ const Container = styled.div`
 	h2 {
 		font-size: 1.2rem;
 		margin-bottom: 8px;
+		span { color: orangered; }
 	}
 	ul {
 		display: flex;
