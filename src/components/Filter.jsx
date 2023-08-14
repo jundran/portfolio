@@ -65,7 +65,7 @@ const Container = styled.div`
 		}
 		li {
 			display: grid;
-			grid-template-columns: 125px 50px;
+			grid-template-columns: 170px 50px;
 		}
 		button { width: 90px; }
 	}

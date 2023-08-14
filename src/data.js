@@ -30,7 +30,8 @@ const blogManager = {
 	image: 'blog-manager.webp',
 	stack: 'React, Sass, Styled Components, Express, MongoDB',
 	tags: ['Full Stack'],
-	description: 'Blog Manager is a front end client for a <strong>three part project</strong> (along with the blog viewer and blog API) that allows writers to author and manage blogs. Blog authors can create an account to write, manage, edit blogs, and to view and delete comments left by readers. It uses JSON web tokens to login and authenticate users. It connects to the <a class="simple-link" href="https://github.com/jundran/blog-api" target="_blank" rel="noreferrer">Blog API</a>, which is a separate back end application that enforces authentication and permissions, verifying that HTTP requests to manage a blog come from the authenticated blog author.'
+	description: 'Blog Manager is a front end client for a <strong>three part project</strong> (along with the blog viewer and blog API) that allows writers to author and manage blogs. Blog authors can create an account to write, manage, edit blogs, and to view and delete comments left by readers. It uses JSON web tokens to login and authenticate users. It connects to the <a class="simple-link" href="https://github.com/jundran/blog-api" target="_blank" rel="noreferrer">Blog API</a>, which is a separate back end application that enforces authentication and permissions, verifying that HTTP requests to manage a blog come from the authenticated blog author.',
+	notice: 'The client for this app is hosted on GitHub pages but the server is hosted on a render.com and sleeps after 15 minutes of inactivity. Please allow 30 seconds from loading the client for the server to wake up and respond to network actions.'
 }
 
 const blogViewer = {
@@ -41,7 +42,8 @@ const blogViewer = {
 	image: 'blog-viewer.webp',
 	stack: 'HTML, CSS, JavaScript, Express, MongoDB',
 	tags: ['Full Stack'],
-	description: 'Blog Viewer is the front end client for reading blogs created by authors using blog-manager. It allows the public to read and comment on published blogs. For simplicity users can read and leave comments without authentication or an account. The backend <a class="simple-link" href="https://github.com/jundran/blog-api" target="_blank" rel="noreferrer">API</a> ensures that only published blogs can be fetched by the client.'
+	description: 'Blog Viewer is the front end client for reading blogs created by authors using blog-manager. It allows the public to read and comment on published blogs. For simplicity users can read and leave comments without authentication or an account. The backend <a class="simple-link" href="https://github.com/jundran/blog-api" target="_blank" rel="noreferrer">API</a> ensures that only published blogs can be fetched by the client.',
+	notice: 'The client for this app is hosted on GitHub pages but the server is hosted on a render.com and sleeps after 15 minutes of inactivity. Please allow 30 seconds from loading the client for the server to wake up and respond to network actions.'
 }
 
 const calculator = {
@@ -96,7 +98,8 @@ const inventoryApplication = {
 	image: 'inventory-application.webp',
 	stack: 'PUG, SASS, JavaScript, Express, MongoDB',
 	tags: ['Server Side Rendering'],
-	description: 'This is an inventory management application. It catalogues items available for sale in in a store along with stock counts, descriptions, prices etc. The user can view, create, edit and delete products and the categories that they belong to using the app. They can upload images and thumbnails using multer middleware. Data is persisted to a cloud hosted MongoDB database. PUG templates serve the front end views using Express. As this is a practice project it is using free tier hosting on render.com. A limitation of the  free tier is that it does not allow for persistent storage so images will not be saved across server restarts but, in the code, I have implemented functionality to save uploaded images and delete them from the database and from the file system. The initial data for this app is populated from the Dummy JSON API as it would be very time consuming and tedious to manual enter all this data myself. The app also makes use of MongoDB aggregation pipeline to generate dynamic statistics about the inventory which you can see on the homepage.'
+	description: 'This is an inventory management application. It catalogues items available for sale in in a store along with stock counts, descriptions, prices etc. The user can view, create, edit and delete products and the categories that they belong to using the app. They can upload images and thumbnails using multer middleware. Data is persisted to a cloud hosted MongoDB database. PUG templates serve the front end views using Express. As this is a practice project it is using free tier hosting on render.com. A limitation of the  free tier is that it does not allow for persistent storage so images will not be saved across server restarts but, in the code, I have implemented functionality to save uploaded images and delete them from the database and from the file system. The initial data for this app is populated from the Dummy JSON API as it would be very time consuming and tedious to manual enter all this data myself. The app also makes use of MongoDB aggregation pipeline to generate dynamic statistics about the inventory which you can see on the homepage.',
+	notice: 'The app is hosted on a server that sleeps when inactive for 15 minutes. Please allow 30 seconds for the service to wake up.'
 }
 
 const knightsTravails = {
@@ -140,7 +143,8 @@ const membersOnly = {
 	image: 'members-only.webp',
 	stack: 'EJS, SASS, JavaScript, Express, MongoDB',
 	tags: ['Server Side Rendering'],
-	description: 'This is a message board app developed with Express, MongoDB and PassportJS, serving EJS templates. It has minimal styling and isn\'t much fun but its purpose is to demonstrate how to authenticate users and manage their abilities depending on if they are logged in or on the status of their account.'
+	description: 'This is a message board app developed with Express, MongoDB and PassportJS, serving EJS templates. It has minimal styling and isn\'t much fun but its purpose is to demonstrate how to authenticate users and manage their abilities depending on if they are logged in or on the status of their account.',
+	notice: 'The app is hosted on a server that sleeps when inactive for 15 minutes. Please allow 30 seconds for the service to wake up.'
 }
 
 const memoryCard = {
@@ -162,7 +166,8 @@ const miniMessageBoard = {
 	image: 'mini-message-board.webp',
 	stack: 'PUG, SASS, JavaScript, Express',
 	tags: ['Server Side Rendering'],
-	description: 'This a simple message board app created to practise what I have learned about Express so far. It serves PUG templates. The index route shows the message board. The user can fill out the form to post a new message to the "/new" route which will save the message to an array. The user is then redirected to the index page which fetches the updated array of messages. Messages are persisted as long as the server remains running and can be seen by all users. For a production ready app, a database would be needed to provide authorization and data persistence if the server goes offline but that is beyond the scope of this project.'
+	description: 'This a simple message board app created to practise what I have learned about Express so far. It serves PUG templates. The index route shows the message board. The user can fill out the form to post a new message to the "/new" route which will save the message to an array. The user is then redirected to the index page which fetches the updated array of messages. Messages are persisted as long as the server remains running and can be seen by all users. For a production ready app, a database would be needed to provide authorization and data persistence if the server goes offline but that is beyond the scope of this project.',
+	notice: 'The app is hosted on a server that sleeps when inactive for 15 minutes. Please allow 30 seconds for the service to wake up.'
 }
 
 const movies = {

@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import Notice from './Notice'
 import { TABLET, CHARCOAL, GREEN } from '../styles/variables'
 
 export default function Project ({ data }) {
@@ -18,6 +19,7 @@ export default function Project ({ data }) {
 						<span>Live</span>
 						<img src="icons/preview.svg" alt="" />
 					</ProjectLink>
+					{data.notice && <Notice message={data.notice} />}
 				</div>
 			</div>
 			<ScreenShot src={'screenshots/' + data.image} alt={data.name} />
@@ -52,6 +54,8 @@ const Container = styled.div`
 	.links {
 		display: flex;
 		margin-top: 24px;
+		gap: 32px;
+		align-items: center;
 	}
 `
 
@@ -84,7 +88,6 @@ const ProjectLink = styled.a`
 	transition: transform .1s ease-in-out;
 	&.live {
 		color: ${GREEN};
-		margin-left: 32px;
 	}
 	&:hover { transform: scale(110%); }
 	img { width: 16px; }
