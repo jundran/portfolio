@@ -27,13 +27,14 @@ export default function HomePage () {
 					<Badge image="skills/nodejs.svg" name="NodeJS" />
 					<Badge image="skills/express.svg" name="ExpressJS" />
 					<Badge image="skills/mongodb.svg" name="MongoDB" />
+					<Badge image="skills/socketio.svg" name="SocketIO" />
 					<Badge image="skills/jest.svg" name="Jest" />
 					<Badge image="skills/webpack.svg" name="Webpack" />
 					<Badge image="skills/babel.svg" name="Babel" />
-					<Badge image="skills/github.svg" name="GitHub" link="https://github.com/jundran" />
 					<Badge image="skills/git.svg" name="Git" />
 					<Badge image="skills/sass.svg" name="SASS" />
 					<Badge image="skills/linux.svg" name="Linux" />
+					<Badge image="skills/github.svg" name="GitHub" link="https://github.com/jundran" />
 				</Badges>
 			</section>
 			<Contact className="contact" aria-label='Contact'>
