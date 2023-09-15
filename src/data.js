@@ -183,13 +183,13 @@ const movies = {
 
 const odinbook = {
 	id: crypto.randomUUID(),
-	title: 'OdinBook',
-	code: 'https://github.com/jundran/odinbook',
-	live: 'https://jundran.github.io/odinbook/',
+	title: 'Odin Book',
+	code: 'https://github.com/jundran/odinbook-ts',
+	live: 'https://jundran.github.io/odinbook-ts/',
 	image: 'odinbook.webp',
 	stack: 'React, Styled Components, SocketIO, Express, MongoDB',
 	tags: ['Full Stack'],
-	description: 'The Odinbook is a social media site. Users can make a profile, create posts with images, interact with friends and receive realtime notifications.'
+	description: 'The Odinbook is a social media site. Users can make a profile, create posts with images, interact with friends and receive realtime notifications. Written in TypeScript.'
 }
 
 const odinRecipes = {
