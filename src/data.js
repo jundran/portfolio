@@ -94,12 +94,11 @@ const inventoryApplication = {
 	id: crypto.randomUUID(),
 	title: 'Inventory',
 	code: 'https://github.com/jundran/inventory-application',
-	live: 'https://inventory-ml9n.onrender.com/',
+	live: 'https://inventory-application-production-dde5.up.railway.app',
 	image: 'inventory-application.webp',
 	stack: 'PUG, SASS, JavaScript, Express, MongoDB',
 	tags: ['Server Side Rendering'],
-	description: 'This is an inventory management application. It catalogues items available for sale in in a store along with stock counts, descriptions, prices etc. The user can view, create, edit and delete products and the categories that they belong to using the app. They can upload images and thumbnails using multer middleware. Data is persisted to a cloud hosted MongoDB database. PUG templates serve the front end views using Express. As this is a practice project it is using free tier hosting on render.com. A limitation of the  free tier is that it does not allow for persistent storage so images will not be saved across server restarts but, in the code, I have implemented functionality to save uploaded images and delete them from the database and from the file system. The initial data for this app is populated from the Dummy JSON API as it would be very time consuming and tedious to manual enter all this data myself. The app also makes use of MongoDB aggregation pipeline to generate dynamic statistics about the inventory which you can see on the homepage.',
-	notice: 'The app is hosted on a server that sleeps when inactive for 15 minutes. Please allow 30 seconds for the service to wake up.'
+	description: 'This is an inventory management application. It catalogues items available for sale in in a store along with stock counts, descriptions, prices etc. The user can view, create, edit and delete products and the categories that they belong to using the app. They can upload images and thumbnails using multer middleware. Data is persisted to a cloud hosted MongoDB database. PUG templates serve the front end views using Express. As this is a practice project it is using free tier hosting on render.com. A limitation of the  free tier is that it does not allow for persistent storage so images will not be saved across server restarts but, in the code, I have implemented functionality to save uploaded images and delete them from the database and from the file system. The initial data for this app is populated from the Dummy JSON API as it would be very time consuming and tedious to manual enter all this data myself. The app also makes use of MongoDB aggregation pipeline to generate dynamic statistics about the inventory which you can see on the homepage.'
 }
 
 const knightsTravails = {
