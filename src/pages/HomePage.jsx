@@ -2,17 +2,21 @@ import Badge from '../components/Badge'
 import ContactForm from '../components/ContactForm'
 import styled from 'styled-components'
 import { MOBILE } from '../styles/variables'
+import { Link } from 'react-router-dom'
 
 export default function HomePage () {
 	return (
 		<Page className="HomePage centred">
 			<Intro aria-label='Introduction'>
-				<p className="caption">I am a full stack web developer and a student of the Odin Project.</p>
-				<a href='https://www.theodinproject.com' target='_blank' rel="noreferrer">
-					<img className="odin" src="skills/odin.svg" alt="odin project logo" />
-				</a>
+				<div>
+					<p className="caption">I am a full stack web developer and a student of the Odin Project.</p>
+					<OdinLogoLink href='https://www.theodinproject.com' target='_blank' rel="noreferrer">
+						<img src="skills/odin.svg" alt="odin project logo" />
+					</OdinLogoLink>
+				</div>
+				<p><Link className='simple-link' to='/projects'>View my live deployments.</Link></p>
 				<p><a className='simple-link' href='https://github.com/jundran' target='_blank' rel="noreferrer">
-					View all my code and projects on GitHub.
+					View all my code on GitHub.
 				</a></p>
 			</Intro>
 			<section aria-label='Skills'>
@@ -68,6 +72,10 @@ const Intro = styled.section`
 		width: 512px;
 		max-width: 90vw;
 	}
+`
+
+const OdinLogoLink = styled.a`
+	display: block;
 `
 
 const Badges = styled.div`

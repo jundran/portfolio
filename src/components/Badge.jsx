@@ -14,7 +14,8 @@ export default function Badge ({ image, name, link }) {
 	return <Inner />
 }
 
-const Container = styled.div`
+const Container = styled.button`
+	background: none;
 	border: 1px dotted #999;
 	width: 125px;
 	height: 125px;
