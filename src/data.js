@@ -181,6 +181,17 @@ const movies = {
 	description: 'This is a close clone of <a class="simple-link" href="https://www.themoviedb.org/" target="_blank" rel="noreferrer">TMDB website</a> made with React. It uses real data from TMDB API. This app does not have a back end and not all the features of the original site have been implemented because of it is far too big, but the core purpose of the site is functional, which is to find movies and TV shows to watch and I use it personally. The home page loads trending movies and TV shows from the API. I built a toggle component to switch between media types or time frames. I created the modal video player which plays trailers from the home page or from individual media detail pages and, unlike the original site, background interaction and scrolling is disabled when the modal is open. I created a review score component to match the one on TMDB which works dynamically using the score returned by the API. I also implemented search functionality with a drop down search bar that queries the API. Furthermore, my site aims to use best practices for modular reusable components along with correct semantics for accessibility and screen readers.'
 }
 
+const nextExample = {
+	id: crypto.randomUUID(),
+	title: 'Next Example',
+	code: 'https://github.com/jundran/next-example',
+	live: 'https://next-example-production.up.railway.app',
+	image: 'next-example.webp',
+	stack: 'NextJS, CSS Modules, Supabase',
+	tags: ['Full Stack'],
+	description: 'I made this project to practise what I have learned about Next JS and Supabase, which is a different approach to previous projects that use a client rendered app with a separate backend API that connects to MongoDB. It uses server side rendering where possible but with some client side components such as those that require React context like the theme toggle. It is a work in progress and soon will have authentication with the option for third party login and management of a user dashboard that will allow the administration and creation of articles on the site. Data is fetched from a Supabase Postgres database.'
+}
+
 const odinbook = {
 	id: crypto.randomUUID(),
 	title: 'Odin Book',
@@ -295,6 +306,7 @@ const weatherApp = {
 export const tags = ['Frontend Only', 'Full Stack', 'Server Side Rendering', 'Game']
 
 export const projects = [
+	nextExample,
 	odinbook,
 	blogManager,
 	blogViewer,
