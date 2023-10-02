@@ -24,16 +24,20 @@ export default function HomePage () {
 					<Badge image="skills/typescript.svg" name="TypeScript" />
 					<Badge image="skills/react.svg" name="React" />
 					<Badge image="skills/react-router.svg" name="React Router" />
+					<Badge image="skills/nextjs.svg" name="NextJS" />
 					<Badge image="skills/nodejs.svg" name="NodeJS" />
 					<Badge image="skills/express.svg" name="ExpressJS" />
 					<Badge image="skills/mongodb.svg" name="MongoDB" />
+					<Badge image="skills/supabase.svg" name="Supabase" />
 					<Badge image="skills/socketio.svg" name="SocketIO" />
 					<Badge image="skills/jest.svg" name="Jest" />
 					<Badge image="skills/eslint.svg" name="ESLint" />
+					<Badge image="skills/sass.svg" name="SASS" />
 					<Badge image="skills/webpack.svg" name="Webpack" />
 					<Badge image="skills/babel.svg" name="Babel" />
 					<Badge image="skills/git.svg" name="Git" />
-					<Badge image="skills/sass.svg" name="SASS" />
+					<Badge image="skills/vite.svg" name="Vite" />
+					<Badge image="skills/esbuild.svg" name="ESBuild" />
 					<Badge image="skills/linux.svg" name="Linux" />
 					<Badge image="skills/github.svg" name="GitHub" link="https://github.com/jundran" />
 				</Badges>
