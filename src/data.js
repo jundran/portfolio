@@ -184,7 +184,7 @@ const nextExample = {
 	id: crypto.randomUUID(),
 	title: 'Next Example',
 	code: 'https://github.com/jundran/next-example',
-	live: 'https://next-example-production.up.railway.app',
+	live: 'https://next-example-one-mauve.vercel.app',
 	image: 'next-example.webp',
 	stack: 'NextJS, CSS Modules, Supabase',
 	tags: ['Full Stack'],
