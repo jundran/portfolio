@@ -33,6 +33,7 @@ export default function HomePage () {
 					<Badge image="skills/express.svg" name="ExpressJS" />
 					<Badge image="skills/mongodb.svg" name="MongoDB" />
 					<Badge image="skills/supabase.svg" name="Supabase" />
+					<Badge image="skills/postgresql.svg" name="PostgreSQL" />
 					<Badge image="skills/socketio.svg" name="SocketIO" />
 					<Badge image="skills/jest.svg" name="Jest" />
 					<Badge image="skills/eslint.svg" name="ESLint" />
