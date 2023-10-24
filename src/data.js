@@ -188,7 +188,7 @@ const nextExample = {
 	image: 'next-example.webp',
 	stack: 'NextJS, CSS Modules, Supabase',
 	tags: ['Full Stack'],
-	description: 'I made this project to practise what I have learned about Next JS and Supabase, which is a different approach to previous projects that use a client rendered app with a separate backend API that connects to MongoDB. It uses server side rendering where possible but with some client side components such as those that require React context like the theme toggle. It is a work in progress and soon will have authentication with the option for third party login and management of a user dashboard that will allow the administration and creation of articles on the site. Data is fetched from a Supabase Postgres database.'
+	description: 'I made this project to practise what I have learned about Next JS and Supabase, which is a different approach to previous projects that use a client rendered app with a separate back-end API that connects to MongoDB. It uses server side rendering where possible but with some client side components such as those that require React context like the theme toggle. Users can log in with their email and password or via auth provider GitHub. Login is needed for the management of a user dashboard that will allow the administration and creation of articles on the site. Data is fetched from a Supabase PostgreSQL database.'
 }
 
 const odinbook = {
